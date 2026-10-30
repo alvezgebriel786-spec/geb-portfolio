@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geb's Portfolio</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            padding: 3.5rem 1rem 2.5rem;
+            text-align: center;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid #333;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            color: #aaaaaa;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 4rem;
+        }
+
+        .section-header {
+            border-bottom: 1px solid #2a2a2a;
+            padding-bottom: 0.75rem;
+            margin-top: 3.5rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .section-header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .video-grid-landscape {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .video-grid-shorts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+        }
+
+        .video-card {
+            background: #1e1e1e;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            border: 1px solid #2a2a2a;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-4px);
+            border-color: #444444;
+        }
+
+        .wrapper-16-9 {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            background: #000000;
+        }
+
+        .wrapper-9-16 {
+            position: relative;
+            padding-bottom: 177.78%;
+            height: 0;
+            background: #000000;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .video-info {
+            padding: 1.25rem;
+        }
+
+        .video-info h3 {
+            margin: 0 0 0.4rem 0;
+            font-size: 1.1rem;
+            color: #ffffff;
+        }
+
+        .video-info p {
+            margin: 0;
+            color: #888888;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://ssl.gstatic.com/images/branding/product/1x/avatar_circle_blue_512dp.png" alt="Geb's Profile" class="profile-img">
+        <h1>Geb's Portfolio</h1>
+        <p>Selected Video Editing Work</p>
+    </header>
+
+    <div class="container">
+
+        <!-- HIGHLIGHT REEL TOP -->
+        <div class="section-header" style="margin-top: 0;">
+            <h2>Highlight Reel</h2>
+        </div>
+        <div class="video-grid-landscape">
+            <div class="video-card">
+                <div class="video-wrapper wrapper-16-9">
+                    <iframe src="https://drive.google.com/file/d/1-WKpjGGnKNCMjqHqKD0xdCtYsy_D2ZJO/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Video Editing Showreel</h3>
+                    <p>Featured highlight reel showcasing top editing work and dynamic styles.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SHORTS / REELS -->
+        <div class="section-header">
+            <h2>Shorts &amp; Reels</h2>
+        </div>
+        <div class="video-grid-shorts">
+            <div class="video-card">
+                <div class="video-wrapper wrapper-9-16">
+                    <iframe src="https://drive.google.com/file/d/1EGKEqBfQ4yDIdBhJ20mk0xNc6fW-dCEG/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Sample 1 - Clipping</h3>
+                    <p>Short-form clip edit with fast pacing and engagement hooks.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper wrapper-9-16">
+                    <iframe src="https://drive.google.com/file/d/1eqvczipRu0c9AUujWEJOwCVPfxMa_FXO/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Sample 2 - Talking Head</h3>
+                    <p>Vertical talking head formatting with subtitles and visual callouts.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper wrapper-9-16">
+                    <iframe src="https://drive.google.com/file/d/1xr9bbosGOR5OzzmjsQH5oSUn5U_Scb3X/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Sample 3 - Talking Head</h3>
+                    <p>Dynamic portrait video with sleek captions and visual embellishments.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- LONGFORM VIDEOS -->
+        <div class="section-header">
+            <h2>Longform Videos</h2>
+        </div>
+        <div class="video-grid-landscape">
+            <div class="video-card">
+                <div class="video-wrapper wrapper-16-9">
+                    <iframe src="https://drive.google.com/file/d/12pCjiHJWnooUvm86j_LGfRj_5zyHquY7/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Sample 1 - Interview Highlight</h3>
+                    <p>Longform interview edit with clean audio cuts and multicam transitions.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper wrapper-16-9">
+                    <iframe src="https://drive.google.com/file/d/1WMpCGe-EdZWAAzPe_30nWVMA7rUTi910/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Sample 2 - Mini Vlog</h3>
+                    <p>Story-driven vlog edit with narrative pacing and sound design.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper wrapper-16-9">
+                    <iframe src="https://drive.google.com/file/d/1EgD3qjE8JCCTIwIex2gIB4Lw657Moa-z/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Sample 3 - Promotional Video</h3>
+                    <p>Commercial style editing with brand focus and color grading.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEWS EDITING -->
+        <div class="section-header">
+            <h2>News Editing</h2>
+        </div>
+        <div class="video-grid-landscape">
+            <div class="video-card">
+                <div class="video-wrapper wrapper-16-9">
+                    <iframe src="https://drive.google.com/file/d/1z0WiukMQ-IUbzC-pGM04IuL3vblZMaM9/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Sample 1 - Police Report</h3>
+                    <p>Broadcast news style editing with b-roll overlays and lower thirds.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper wrapper-16-9">
+                    <iframe src="https://drive.google.com/file/d/1IO6M9Aci39cf8bExKNTjBgFWiKVOM0Zi/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Sample 2 - Sports</h3>
+                    <p>Fast-paced sports news coverage with action highlights and graphics.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
