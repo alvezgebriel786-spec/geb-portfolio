@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geb's Portfolio</title>
+
+    <!-- Speed Optimization: Early connection to Google Drive -->
+    <link rel="preconnect" href="https://drive.google.com">
+    <link rel="dns-prefetch" href="https://drive.google.com">
+
     <style>
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -140,14 +145,14 @@
 
     <div class="container">
 
-        <!-- HIGHLIGHT REEL TOP -->
+        <!-- HIGHLIGHT REEL TOP (Loaded immediately) -->
         <div class="section-header" style="margin-top: 0;">
             <h2>Highlight Reel</h2>
         </div>
         <div class="video-grid-landscape">
             <div class="video-card">
                 <div class="video-wrapper wrapper-16-9">
-                    <iframe src="https://drive.google.com/file/d/1-WKpjGGnKNCMjqHqKD0xdCtYsy_D2ZJO/preview" allow="autoplay" allowfullscreen></iframe>
+                    <iframe src="https://drive.google.com/file/d/1-WKpjGGnKNCMjqHqKD0xdCtYsy_D2ZJO/preview" allow="autoplay" allowfullscreen loading="eager"></iframe>
                 </div>
                 <div class="video-info">
                     <h3>Video Editing Showreel</h3>
@@ -156,14 +161,14 @@
             </div>
         </div>
 
-        <!-- SHORTS / REELS -->
+        <!-- SHORTS / REELS (Lazy loaded) -->
         <div class="section-header">
             <h2>Shorts &amp; Reels</h2>
         </div>
         <div class="video-grid-shorts">
             <div class="video-card">
                 <div class="video-wrapper wrapper-9-16">
-                    <iframe src="https://drive.google.com/file/d/1EGKEqBfQ4yDIdBhJ20mk0xNc6fW-dCEG/preview" allow="autoplay" allowfullscreen></iframe>
+                    <iframe src="https://drive.google.com/file/d/1EGKEqBfQ4yDIdBhJ20mk0xNc6fW-dCEG/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
                 </div>
                 <div class="video-info">
                     <h3>Sample 1 - Clipping</h3>
@@ -173,7 +178,7 @@
 
             <div class="video-card">
                 <div class="video-wrapper wrapper-9-16">
-                    <iframe src="https://drive.google.com/file/d/1eqvczipRu0c9AUujWEJOwCVPfxMa_FXO/preview" allow="autoplay" allowfullscreen></iframe>
+                    <iframe src="https://drive.google.com/file/d/1eqvczipRu0c9AUujWEJOwCVPfxMa_FXO/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
                 </div>
                 <div class="video-info">
                     <h3>Sample 2 - Talking Head</h3>
@@ -183,7 +188,7 @@
 
             <div class="video-card">
                 <div class="video-wrapper wrapper-9-16">
-                    <iframe src="https://drive.google.com/file/d/1xr9bbosGOR5OzzmjsQH5oSUn5U_Scb3X/preview" allow="autoplay" allowfullscreen></iframe>
+                    <iframe src="https://drive.google.com/file/d/1xr9bbosGOR5OzzmjsQH5oSUn5U_Scb3X/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
                 </div>
                 <div class="video-info">
                     <h3>Sample 3 - Talking Head</h3>
@@ -192,14 +197,14 @@
             </div>
         </div>
 
-        <!-- LONGFORM VIDEOS -->
+        <!-- LONGFORM VIDEOS (Lazy loaded) -->
         <div class="section-header">
             <h2>Longform Videos</h2>
         </div>
         <div class="video-grid-landscape">
             <div class="video-card">
                 <div class="video-wrapper wrapper-16-9">
-                    <iframe src="https://drive.google.com/file/d/12pCjiHJWnooUvm86j_LGfRj_5zyHquY7/preview" allow="autoplay" allowfullscreen></iframe>
+                    <iframe src="https://drive.google.com/file/d/12pCjiHJWnooUvm86j_LGfRj_5zyHquY7/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
                 </div>
                 <div class="video-info">
                     <h3>Sample 1 - Interview Highlight</h3>
@@ -209,7 +214,7 @@
 
             <div class="video-card">
                 <div class="video-wrapper wrapper-16-9">
-                    <iframe src="https://drive.google.com/file/d/1WMpCGe-EdZWAAzPe_30nWVMA7rUTi910/preview" allow="autoplay" allowfullscreen></iframe>
+                    <iframe src="https://drive.google.com/file/d/1WMpCGe-EdZWAAzPe_30nWVMA7rUTi910/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
                 </div>
                 <div class="video-info">
                     <h3>Sample 2 - Mini Vlog</h3>
@@ -219,7 +224,7 @@
 
             <div class="video-card">
                 <div class="video-wrapper wrapper-16-9">
-                    <iframe src="https://drive.google.com/file/d/1EgD3qjE8JCCTIwIex2gIB4Lw657Moa-z/preview" allow="autoplay" allowfullscreen></iframe>
+                    <iframe src="https://drive.google.com/file/d/1EgD3qjE8JCCTIwIex2gIB4Lw657Moa-z/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
                 </div>
                 <div class="video-info">
                     <h3>Sample 3 - Promotional Video</h3>
@@ -228,14 +233,14 @@
             </div>
         </div>
 
-        <!-- NEWS EDITING -->
+        <!-- NEWS EDITING (Lazy loaded) -->
         <div class="section-header">
             <h2>News Editing</h2>
         </div>
         <div class="video-grid-landscape">
             <div class="video-card">
                 <div class="video-wrapper wrapper-16-9">
-                    <iframe src="https://drive.google.com/file/d/1z0WiukMQ-IUbzC-pGM04IuL3vblZMaM9/preview" allow="autoplay" allowfullscreen></iframe>
+                    <iframe src="https://drive.google.com/file/d/1z0WiukMQ-IUbzC-pGM04IuL3vblZMaM9/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
                 </div>
                 <div class="video-info">
                     <h3>Sample 1 - Police Report</h3>
@@ -245,7 +250,7 @@
 
             <div class="video-card">
                 <div class="video-wrapper wrapper-16-9">
-                    <iframe src="https://drive.google.com/file/d/1IO6M9Aci39cf8bExKNTjBgFWiKVOM0Zi/preview" allow="autoplay" allowfullscreen></iframe>
+                    <iframe src="https://drive.google.com/file/d/1IO6M9Aci39cf8bExKNTjBgFWiKVOM0Zi/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
                 </div>
                 <div class="video-info">
                     <h3>Sample 2 - Sports</h3>
